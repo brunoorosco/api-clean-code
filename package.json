@@ -1,0 +1,32 @@
+{
+  "name": "api-clean-node",
+  "version": "1.0.0",
+  "description": "Clean-Code-API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoorosco/api-clean-code/issues"
+  },
+  "homepage": "https://github.com/brunoorosco/api-clean-code#readme",
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
+    "standard": "^16.0.4"
+  }
+}
