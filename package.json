@@ -4,12 +4,12 @@
   "description": "Clean-Code-API",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
-  "lint-staged": {
-    "*.js": [
-      "standard --fix",
-      "git add"
+  "standard": {
+    "env": [
+      "jest"
     ]
   },
   "author": "",
