@@ -4,7 +4,7 @@
   "description": "Clean-Code-API",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchALL",
     "test:staged": "jest"
   },
   "standard": {
